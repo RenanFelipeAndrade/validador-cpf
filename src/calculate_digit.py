@@ -1,14 +1,13 @@
 from .remove_mask import remove_mask
+from ..src.split_cpf import split_cpf
 
 
 def calculate_digit(cpf: str, position=0):
-    cpf = remove_mask(cpf)
-    body_digits, verification_digits = list(cpf[:9]), list(cpf[9:-1])
-    print(body_digits, verification_digits)
+    body_digits, verification_digits = split_cpf(cpf)
     counter = 10 + position
     accumulator = 0
     if position > 0:
-        body_digits.append(verification_digits[0])
+        body_digits += verification_digits[0]
 
     for digit in body_digits:
         accumulator += int(digit) * counter
