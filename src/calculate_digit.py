@@ -1,4 +1,3 @@
-from .remove_mask import remove_mask
 from ..src.split_cpf import split_cpf
 
 
