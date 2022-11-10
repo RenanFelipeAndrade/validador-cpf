@@ -9,5 +9,6 @@ def test_validate_body():
     basic_cpfs = [str(number) * 9 for number in range(9)]
 
     assert len(cpf_body) == 9
-    assert cpf_body == validate_body(cpf_body)
+    assert validate_body(cpf_body).get("is_valid")
+    assert validate_body(cpf_body).get("cpf") == cpf
     assert cpf_body not in basic_cpfs
