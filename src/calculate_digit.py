@@ -13,4 +13,6 @@ def calculate_digit(cpf: str, position=0):
         counter -= 1
 
     digit = str((accumulator * (10)) % (11))
+    if digit == "10":
+        return "0"
     return digit
