@@ -6,6 +6,8 @@ def calculate_digit(cpf: str, position: int = 0) -> str:
     counter = 10 + position
     accumulator = 0
     if position > 0:
+        if len(cpf) == 9:
+            verification_digits += calculate_digit(cpf, position=0)
         body_digits += verification_digits[0]
 
     for digit in body_digits:
