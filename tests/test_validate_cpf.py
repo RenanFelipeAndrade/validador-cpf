@@ -7,5 +7,6 @@ def test_validate_cpf():
     clean_cpf = remove_mask(cpf)
     assert validate_cpf(cpf).get("cpf")[-2:] == clean_cpf[-2:]
     assert validate_cpf(cpf).get("is_valid")
-    assert validate_cpf(cpf).get("cpf") == clean_cpf
-    assert len(validate_cpf(cpf).get("cpf")) == len(clean_cpf)
+    assert remove_mask(validate_cpf(cpf).get("cpf")) == clean_cpf
+    assert len(validate_cpf(cpf).get("cpf")) == len(cpf)
+    assert len(validate_cpf(cpf).get("cpf")) == len(clean_cpf) + 3
