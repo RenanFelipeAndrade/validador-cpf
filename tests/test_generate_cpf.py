@@ -4,8 +4,15 @@ from ..src.validate_cpf import validate_cpf
 
 def test_generate_cpf():
     cpf = generate_cpf()
+    cpf_list = generate_cpf(amount=10)
 
     assert len(cpf[:9]) == 9  # without validation digit
     assert len(cpf[9:]) == 2  # validation digit
     assert cpf == validate_cpf(cpf).get("cpf")
     assert len(cpf) == 11
+
+    for cpf in cpf_list:
+        assert len(cpf[:9]) == 9  # without validation digit
+        assert len(cpf[9:]) == 2  # validation digit
+        assert cpf == validate_cpf(cpf).get("cpf")
+        assert len(cpf) == 11
