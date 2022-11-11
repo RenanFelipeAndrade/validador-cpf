@@ -1,7 +1,7 @@
 from .remove_mask import remove_mask
 
 
-def split_cpf(cpf: str):
+def split_cpf(cpf: str) -> str:
     cpf = remove_mask(cpf)
     if len(cpf) < 9 or len(cpf) > 11:
         raise ValueError("O cpf precisa ter entre 9 a 11 dígitos")

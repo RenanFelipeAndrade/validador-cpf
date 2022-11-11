@@ -1,7 +1,7 @@
 from ..src.split_cpf import split_cpf
 
 
-def calculate_digit(cpf: str, position=0):
+def calculate_digit(cpf: str, position: int = 0) -> str:
     body_digits, verification_digits = split_cpf(cpf)
     counter = 10 + position
     accumulator = 0
