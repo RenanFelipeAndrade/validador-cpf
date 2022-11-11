@@ -17,6 +17,7 @@ def test_generate_validation_digits():
     assert second_digit == cpf[10]
     assert first_digit + second_digit == validation_digits
     assert cpf == validate_cpf(cpf).get("cpf")
+    assert validate_cpf(cpf).get("is_valid")
     assert cpf[9:] == validate_cpf(cpf).get("cpf")[9:]  # validation digits
     assert len(cpf) == 11
     assert len(cpf[9:]) == len(validate_cpf(cpf).get("cpf")[9:])  # validation digits

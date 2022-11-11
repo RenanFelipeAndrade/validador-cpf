@@ -4,7 +4,7 @@ from pytest import raises
 
 
 def test_split_cpf():
-    cpf = generate_cpf()
+    cpf = generate_cpf(with_mask=False)
     cpf_body, validation_digits = split_cpf(cpf)
 
     with raises(ValueError) as split_cpf_error:
