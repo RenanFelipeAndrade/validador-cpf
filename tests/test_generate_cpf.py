@@ -7,5 +7,5 @@ def test_generate_cpf():
 
     assert len(cpf[:9]) == 9  # without validation digit
     assert len(cpf[9:]) == 2  # validation digit
-    assert cpf == validate_cpf(cpf)
+    assert cpf == validate_cpf(cpf).get("cpf")
     assert len(cpf) == 11
