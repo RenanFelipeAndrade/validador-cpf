@@ -1,6 +1,6 @@
-from calculate_digit import calculate_digit
-from remove_mask import remove_mask
-from split_cpf import split_cpf
+from src.calculate_digit import calculate_digit
+from src.remove_mask import remove_mask
+from src.split_cpf import split_cpf
 
 
 def validate_cpf(cpf: str) -> dict[str, bool | str]:

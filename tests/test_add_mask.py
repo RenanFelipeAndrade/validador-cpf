@@ -1,4 +1,4 @@
-from ..src.add_mask import add_mask
+from src.add_mask import add_mask
 from pytest import raises
 
 

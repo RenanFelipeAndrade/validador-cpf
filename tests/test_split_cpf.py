@@ -1,5 +1,5 @@
-from ..src.split_cpf import split_cpf
-from ..src.generate_cpf import generate_cpf
+from src.split_cpf import split_cpf
+from src.generate_cpf import generate_cpf
 from pytest import raises
 
 

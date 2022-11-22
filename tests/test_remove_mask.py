@@ -1,4 +1,4 @@
-from ..src.remove_mask import remove_mask
+from src.remove_mask import remove_mask
 
 
 def test_remove_mask():

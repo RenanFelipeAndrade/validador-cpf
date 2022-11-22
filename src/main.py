@@ -1,5 +1,5 @@
-from validate_cpf import validate_cpf
-from generate_cpf import generate_cpf
+from src.validate_cpf import validate_cpf
+from src.generate_cpf import generate_cpf
 
 
 def main(choice: int) -> None:

@@ -1,7 +1,7 @@
-from ..src.validate_cpf import validate_cpf
-from ..src.generate_validation_digits import generate_validation_digits
-from ..src.generate_cpf_body import generate_cpf_body
-from ..src.calculate_digit import calculate_digit
+from src.validate_cpf import validate_cpf
+from src.generate_validation_digits import generate_validation_digits
+from src.generate_cpf_body import generate_cpf_body
+from src.calculate_digit import calculate_digit
 
 
 def test_generate_validation_digits():

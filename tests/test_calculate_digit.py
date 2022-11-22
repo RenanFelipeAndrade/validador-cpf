@@ -1,8 +1,8 @@
-from ..src.calculate_digit import calculate_digit
-from ..src.split_cpf import split_cpf
-from ..src.generate_cpf import generate_cpf
-from ..src.generate_cpf_body import generate_cpf_body
-from ..src.generate_validation_digits import generate_validation_digits
+from src.calculate_digit import calculate_digit
+from src.split_cpf import split_cpf
+from src.generate_cpf import generate_cpf
+from src.generate_cpf_body import generate_cpf_body
+from src.generate_validation_digits import generate_validation_digits
 
 
 def test_calculate_digit():

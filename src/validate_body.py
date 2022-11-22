@@ -1,4 +1,4 @@
-from split_cpf import split_cpf
+from src.split_cpf import split_cpf
 
 
 def validate_body(

@@ -1,6 +1,6 @@
-from ..src.generate_cpf import generate_cpf
-from ..src.add_mask import add_mask
-from ..src.validate_cpf import validate_cpf
+from src.generate_cpf import generate_cpf
+from src.add_mask import add_mask
+from src.validate_cpf import validate_cpf
 
 
 def test_generate_cpf():

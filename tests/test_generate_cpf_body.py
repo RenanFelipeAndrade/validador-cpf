@@ -1,4 +1,4 @@
-from ..src.generate_cpf_body import generate_cpf_body
+from src.generate_cpf_body import generate_cpf_body
 
 
 def test_test_generate_cpf():

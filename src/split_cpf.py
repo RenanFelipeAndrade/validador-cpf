@@ -1,4 +1,4 @@
-from remove_mask import remove_mask
+from src.remove_mask import remove_mask
 
 
 def split_cpf(cpf: str) -> str:

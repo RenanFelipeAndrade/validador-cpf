@@ -1,5 +1,5 @@
-from remove_mask import remove_mask
-from split_cpf import split_cpf
+from src.remove_mask import remove_mask
+from src.split_cpf import split_cpf
 
 
 def add_mask(cpf: str) -> str:

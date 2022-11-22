@@ -1,5 +1,5 @@
-from ..src.validate_cpf import validate_cpf
-from ..src.remove_mask import remove_mask
+from src.validate_cpf import validate_cpf
+from src.remove_mask import remove_mask
 
 
 def test_validate_cpf():

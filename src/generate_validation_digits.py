@@ -1,4 +1,4 @@
-from calculate_digit import calculate_digit
+from src.calculate_digit import calculate_digit
 
 
 def generate_validation_digits(cpf_body: str) -> str:

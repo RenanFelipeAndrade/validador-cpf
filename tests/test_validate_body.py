@@ -1,6 +1,6 @@
-from ..src.validate_body import validate_body
-from ..src.generate_cpf_body import generate_cpf_body
-from ..src.split_cpf import split_cpf
+from src.validate_body import validate_body
+from src.generate_cpf_body import generate_cpf_body
+from src.split_cpf import split_cpf
 
 
 def test_validate_body():
