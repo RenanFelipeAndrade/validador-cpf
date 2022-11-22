@@ -1,6 +1,6 @@
-from .generate_cpf_body import generate_cpf_body
-from .generate_validation_digits import generate_validation_digits
-from .add_mask import add_mask
+from generate_cpf_body import generate_cpf_body
+from generate_validation_digits import generate_validation_digits
+from add_mask import add_mask
 
 
 def generate_cpf(amount=1, with_mask=True) -> str:

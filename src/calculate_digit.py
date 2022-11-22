@@ -1,4 +1,4 @@
-from ..src.split_cpf import split_cpf
+from split_cpf import split_cpf
 
 
 def calculate_digit(cpf: str, position: int = 0) -> str:
