@@ -2,7 +2,7 @@ from validate_cpf import validate_cpf
 from generate_cpf import generate_cpf
 
 
-def main(choice: int) -> str:
+def main(choice: int) -> None:
     if choice == 1:
         cpf = input("Insira o cpf a ser validado (com ou sem máscara)\n> ")
         validated_cpf = validate_cpf(cpf)
@@ -32,7 +32,7 @@ def main(choice: int) -> str:
 
     cpf_list = generate_cpf(amount=amount, with_mask=with_mask)
     if len(cpf_list) == 1:
-        return print(cpf_list[0])
+        print(cpf_list[0])
 
     print("\n\nLista de cpfs gerados\n")
     for cpf in cpf_list:
