@@ -32,10 +32,16 @@ Entre no shell do poetry
 poetry shell
 ```
 
+Execute o código como um módulo
+
+```
+python -m src.main
+```
+
 ## Testando o código
 
 Para rodar os testes, tenha instalado todas as dependecias e esteja no shell do poetry
 
 ```
-pytest
+python -m pytest test
 ```
